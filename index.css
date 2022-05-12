@@ -1,0 +1,121 @@
+
+.max-height {
+    height: 100vh;
+    background: url("https://images.pexels.com/photos/343457/pexels-photo-343457.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+  .max-height::after {
+    height: 100vh;
+    background: rgba(23,67,88,0.9);
+    width: 100%;
+    content: "";
+    position: absolute;
+    background-size: cover;
+    
+  }
+  .navbar {
+    width: 100%;
+    background-color: rgba(0,0,0,.2);
+  }
+  .navbar ul {
+    text-align: center;
+  }
+  .navbar li {
+    position: relative;
+    z-index: 20;
+    list-style: none;
+    display: inline-block;
+  }
+  .navbar ul li a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#c7ecee;
+    font-size: 17px;
+    font-family: Amaranth;
+    font-weight: 600;
+    padding: 5px;
+  }
+ 
+  
+  #banner {
+    color: white;
+    margin-top: -4rem;
+    position: relative;
+    z-index: 20;
+    font-family: Amaranth;
+  }
+  .small-slide{
+      color: white;
+      position: relative;
+      z-index: 20;
+  }
+  .banner-link {
+    color: black !important;
+    background:#16a085 !important;
+    position: relative;
+    z-index: 20;
+    font-family: Amaranth;
+  }
+  .banner-link:hover {
+    background: white;
+  }
+  .poly {
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
+    color: white;
+    overflow: hidden;
+  }
+  #lap {
+    position: relative;
+    z-index: 20;
+    border-radius: 0.5rem;
+  }
+  .img-container {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .about-img__container {
+    position: relative;
+  }
+  .about-img__container::before {
+    content: "";
+    position: absolute;
+    top: -1.5rem;
+    left: -1.5rem;
+    width: 50%;
+    height: 97%;
+    outline: 0.2rem solid #2980b9;
+    z-index: -1;
+    transition: all 1s linear;
+  }
+  .about-img__container:hover:before {
+    top: 0;
+    left: 0;
+  }
+  .footer-title {
+    background: black;
+    color:#2980b9;
+  }
+  .footer-contact {
+    background: #2980b9;
+    font-family: Amaranth;
+  }
+  .footer-icon {
+    font-size: 1.5rem;
+    color: white;
+    transition: all 0.4 ease-in-out;
+  }
+  .footer-icon:hover {
+    color:#2980b9;
+  }
+  .font {
+    font-family: Amaranth;
+  }
+  .banner-title {
+    font-family: Amaranth;
+  }
